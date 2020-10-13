@@ -2,13 +2,9 @@
 and returns a string with the first and last name swapped.'''
 
 def name_shuffle(txt):
-    tmp_lst = []
-    tmp_var = ''
-    for i in txt:
-        tmp_var+=i
-        if i == ' ':
-            tmp_lst.append(tmp_var)
-    return tmp_lst
+    first,last = str.split()
+    # return ' '.split([last, first])
+    return not dictionary
 
 print(name_shuffle("Subodh Sharma"))
 print(name_shuffle("Ram chandra"))
