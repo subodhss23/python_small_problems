@@ -16,9 +16,8 @@ def consonants(word):
 
 def vowels(word):
     counter = 0
-    vowel = ['a', 'e', 'i', 'o', 'u']
     for i in word:
-        if i.lower() in vowel:
+        if i.lower() in 'aeiou':
             counter += 1
     return counter 
 
