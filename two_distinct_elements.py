@@ -4,18 +4,10 @@
 
 def return_unique(lst):
     result = []
-    counter = 0
     for i in lst:
-        head = i
-        while (counter <= len(lst)):
-            if head != lst[counter]:
-                result.append(head)
-                counter += 1
+        if lst.count(i) < 2:
+            result.append(i)
     return result
-
-            
-        
-
 
 
 
