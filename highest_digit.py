@@ -8,11 +8,14 @@
 #         new_list.append(i)
 #     return max(new_list)
 
+# def highest_digit(num):
+#     new_str = str(num)
+#     new_lst = list(new_str)
+#     return max(new_lst)
+
 def highest_digit(num):
-    new_str = str(num)
-    new_lst = list(new_str)
-    return max(new_lst)
+    return int(max(str(num)))
 
 print(highest_digit(379))
-# print(highest_digit(2))
-# print(highest_digit(377401))
+print(highest_digit(2))
+print(highest_digit(377401))
