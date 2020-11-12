@@ -1,11 +1,5 @@
-def pH_name(pH):
-	if pH > 7 and pH < 14.0:
-		return 'alkaline'
-	elif pH < 7 and pH > 0:
-		return 'acidic'
-	elif pH >= 7.0 and pH <= 7.9:
-		return 'neutral'
-	elif pH < 0.0 or pH > 14.0:
-		return 'invalid'
+def compare(str):
+	for i in str:
+		
 
-print(pH_name(7.2))
+print(compare('1234'))
