@@ -1,15 +1,18 @@
-def operation(a, b, op):
-	if op == 'add':
-		print('we in add')
-		return str(int(a) + int(b))
-	elif op == 'subtract':
-		print('we in sub')
-		return str(int(a) - int(b))
-	elif op == 'multiply':
-		print('we in mult')
-		return str(int(a) * int(b))
-	elif op == 'divide':
-		if b == '0':
-			return 'undefined'
-		print('we in divide')
-		return str(int(a) // int(b))
+# messing around with dictionary 
+
+my_dict = {
+	"java": 100,
+	"python": 112,
+	"c": 11
+}
+
+# key_list = list(my_dict.keys())
+# val_list = list(my_dict.values())
+
+# print(key_list[val_list.index(100)])
+# print(key_list[val_list.index(112)])
+for name, value in my_dict.items():
+	if value == 100:
+		print(name)
+
+print(max())
