@@ -1,5 +1,3 @@
-def compare(str):
-	for i in str:
-		
-
-print(compare('1234'))
+a = [1,2,3,4,5,6]
+for i in reversed(a):
+	print(i)
