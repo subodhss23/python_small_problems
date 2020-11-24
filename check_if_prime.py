@@ -6,10 +6,11 @@
 
 def is_prime(num):
     new_lst = []
-    for i in range(1, num+1):
-        new_lst.append(num/i)
-    return new_lst
+    for i in range(2, num+1):
+        new_lst.append(num%i == 0)
+    return new_lst.count(True) == 1
 
 print(is_prime(31))
 print(is_prime(18))
 print(is_prime(11))
+print(is_prime(5))
