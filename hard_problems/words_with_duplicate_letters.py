@@ -2,7 +2,8 @@
     Return True otherwise. '''
 
 def no_duplicate_letters(phrase):
-    list_phrase = phrase.split(' ')
+    new_phrase = phrase.lower()
+    list_phrase = new_phrase.split(' ')
     for word in list_phrase:
         if len(word) != len(set(word)):
             return False
