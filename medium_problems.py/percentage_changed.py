@@ -6,9 +6,11 @@ def percentage_changed(old, new):
     old_old = int(old.strip('$'))
     new_new = int(new.strip('$'))
     if old_old > new_new:
-        return (old_old - new_new) * 1
+        per_decrease = round((old_old - new_new)/ old_old * 100)
+        return str(per_decrease) + '% decrease'
     elif new_new > old_old:
-        return (new_new - old_old) * 1
+        per_increase = round((new_new - old_old)/ old_old * 100)
+        return str(per_increase) + '% increase'
 
 print(percentage_changed("$800", "$600"))
 print(percentage_changed("$1000", "$840"))
