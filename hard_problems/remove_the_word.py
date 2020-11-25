@@ -3,8 +3,8 @@
 
 def remove_letters(letters, word):
     new_lst = []
-    for i in letters:
-        if i not in word:
+    for i in word:
+        if i in letters:
             letters.remove(i)
     return letters
 
